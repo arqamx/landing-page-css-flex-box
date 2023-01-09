@@ -5,12 +5,13 @@ body {
 
 .header {
     background-color: #1F2937;
-    padding: 30px 12% 200px 12%;
     color: #F9FAF8;
+    padding: 30px 12% 200px 12%;
 }
 
 .nav-bar {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -19,6 +20,7 @@ body {
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 21px;
     margin-top: 0;
 }
@@ -34,10 +36,10 @@ a {
 
 .header-content {
     display: flex;
+    flex-wrap: wrap;
     flex: 1 1 50%;
     justify-content: space-between;
     margin-top: 110px;
-    flex-wrap: wrap;
 }
 
 .header-content-left h1 {
@@ -82,8 +84,113 @@ display: flex;
     min-width: 355px;
 }
 
-/*{
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h2 {
     color: #1F2937;
     font-size: 36px;
     font-weight: bolder;
+    margin-top: 80px;
+}
+
+.info .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.container .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item .illustration {
+    height: 180px;
+    width: 180px;
+    border: 5px solid rgb(112, 112, 230);
+    border-radius: 15px;
+}
+
+.item p {
+    width: 180px;
+    text-align: center;
+    color: rgb(99, 94, 94);
+}
+
+
+
+.quote-section {
+    background-color: #e5e7eb;
+    padding: 150px 20% 115px;
+}
+
+.quote-section p:first-child {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    margin-bottom: 0;
+}
+
+.quote-section p:nth-child(2){
+
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    text-align: right;
+    margin-top: 0;
+    margin-right: 50px;
+}
+
+
+.signUp-section {
+    display: flex;
+    flex: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    width: 60%;
+    height: 160px;
+    margin: 100px auto 110px;
+    border-radius: 10px;
+    
+}
+
+.signUp-section p {
+    margin: 2px;
+}
+
+.signUp-section p:first-child {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+signUp-section p:nth-child(2) {
+    font-size: 22px;
+}
+
+.signUp-section button {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    border: 3px solid #F9FAF8;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+
+.footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 20px 0 22px;
+    text-align: center;
 }
